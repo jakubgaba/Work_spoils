@@ -10,28 +10,3 @@
 		<div>%sveltekit.body%</div>
 	</body>
 </html>
-<!-- 
-%sveltekit.head% — This placeholder is where SvelteKit will inject:
-  - <link> elements, such as CSS or font files.
-  - <script> elements needed for the application.
-  - <meta> tags for SEO, social media cards, etc.
-  - Any content from <svelte:head> components in your Svelte files.
-
-%sveltekit.body% — This is the main content of the page, dynamically injected by SvelteKit:
-  - It includes the HTML structure for the specific page being rendered.
-  - This content should be inside a <div> or other container element to ensure proper hydration and prevent issues with browser extensions or scripts that might inject elements into the DOM.
-
-%sveltekit.assets% — This is a placeholder for the path to your static assets:
-  - It typically points to a directory where your static files like images, CSS, and JS are stored.
-  - If paths.assets is configured in your SvelteKit project, this placeholder will be replaced by the specified path.
-  - If not specified, it defaults to a relative path based on paths.base.
-
-%sveltekit.nonce% — This is used for Content Security Policy (CSP) nonces:
-  - If you're using a CSP and need to add nonces to your <script> or <link> tags, SvelteKit can inject a nonce here.
-  - This placeholder will be replaced with the actual nonce value.
-
-%sveltekit.env.[NAME]% — This is a placeholder for environment variables:
-  - Environment variables that start with the publicPrefix (usually PUBLIC_) can be injected into your HTML.
-  - For example, %sveltekit.env.PUBLIC_API_URL% would be replaced by the value of the environment variable PUBLIC_API_URL.
-  - If the environment variable isn't found, it will default to an empty string ('').
--->
