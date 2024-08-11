@@ -1,0 +1,39 @@
+##
+lib contains your library code (utilities and components),
+which can be imported via the $lib alias, or packaged up for distribution using svelte-package
+##
+
+
+
+*What is $lib ALIAS ?
+---------------------
+
+The $lib alias allows you to import modules, components,
+and other files from this common directory without needing
+to navigate through a complex relative path structure like ../../../../.
+Instead, you can just use $lib as the base path.
+
+**EXAMPLE:
+----------
+import Button from '$lib/components/Button.svelte';
+                     /\
+
+
+*What is  $lib/server   ?
+-------------------------
+Is used for server-side code.
+ SvelteKit enforces a rule that any modules located in $lib/server cannot be imported into client-side code. 
+
+
+**EXAMPLE:
+-------------------------
+ import db from '$lib/server/db.js';
+                    /  \
+
+
+
+
+
+
+?
+https://kit.svelte.dev/docs/server-only-modules

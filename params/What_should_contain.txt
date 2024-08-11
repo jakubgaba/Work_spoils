@@ -1,0 +1,32 @@
+##
+contains any param matchers your app needs
+##
+
+
+
+**EXAMPLE:
+    A route like src/routes/fruits/[page] would match /fruits/apple.
+    but it would also match /fruits/rocketship and we don't want that.
+    Adding a matcher which takes the parameter string ("apple" or "rocketship") and returns true if its valid to your params directory
+
+/** 
+ * @param {string} param                     
+ * @return {param is ('apple' | 'orange')} 
+ * @satisfies {import('@sveltejs/kit').ParamMatcher} 
+ */
+export function match(param) {
+	return param === 'apple' || param === 'orange';
+}
+
+
+
+@param {string} param: This indicates that the function match takes a single argument, param, which is expected to be a string.
+@return {param is ('apple' | 'orange')}: This describes the return type of the function. It specifies that the function will return a boolean value (true or false) 
+@satisfies {import('@sveltejs/kit').ParamMatcher}: This annotation indicates that the function conforms to the ParamMatcher type, which is defined in SvelteKit's type definitions. This ensures that the function is valid and can be used as a matcher in SvelteKit.
+export function match(param): This is a standard JavaScript function declaration. The function is exported so it can be used in other parts of your application, specifically in your route definitions. |
+
+
+
+
+?
+https://kit.svelte.dev/docs/advanced-routing#matching
