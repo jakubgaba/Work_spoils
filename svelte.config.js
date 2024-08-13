@@ -24,7 +24,9 @@ const config = {
 			precompress: true,
 			strict: true,
 		}),
+		csrf: false
 	},
+	
 };
 
 export default config;
