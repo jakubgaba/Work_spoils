@@ -1,5 +1,8 @@
 <script>
-	let name = 'world';
+	import Header from "../../components/Header.svelte";
 </script>
 
-<h1>Hello {name}!</h1>
+<div>
+<Header/>
+<h1>Hello world</h1>
+</div>
