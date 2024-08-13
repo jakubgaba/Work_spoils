@@ -10,7 +10,7 @@ const config = {
 	preprocess: vitePreprocess({
 		scss: {
 			prependData: `@import './src/styles.scss';`
-		}
+		},
 	}),
 	kit: {
 		// Corrected the typo in the comment

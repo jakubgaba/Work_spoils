@@ -1,6 +1,6 @@
 
 <script>
-	console.log("Iam angry")
+	import "../styles/styles.scss"
 </script>
 
 <svelte:head>
@@ -12,10 +12,7 @@
 	<a href="/about">about</a>
 </nav>
 
-<style>
-	:global(body) {
-		font-family: 'Open Sans', sans-serif;
-	}
-</style>
 
 <slot />
+
+

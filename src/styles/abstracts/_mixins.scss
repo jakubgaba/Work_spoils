@@ -5,13 +5,13 @@ $tab-jerk: 1400px;
 $big-desktop: 1800px;
 
 @function base-font-size($pixels) {
-    @return percentage(calc($pixels / 16px));
+    @return percentage(calc($pixels / 12px));
 }
 
 
 @mixin respond($breakpoint) {
     // 16px is the default browser font size
-    @media (max-width: calc(calc($breakpoint / 16px) * 1em)) {
+    @media (max-width: calc(calc($breakpoint / 12px) * 1em)) {
         @content;
     }
 }
