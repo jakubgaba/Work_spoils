@@ -14,3 +14,5 @@ saveIt:
 %:
 	@:
 
+sendIt:
+	git push -u origin main
