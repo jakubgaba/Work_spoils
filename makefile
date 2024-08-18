@@ -1,6 +1,9 @@
 run:
 	npm run dev
 
+build:
+	npm run build
+
 saveIt:
 	@if [ -z "$(filter-out $@,$(MAKECMDGOALS))" ]; then \
 		echo "You must provide a commit message."; \
@@ -10,3 +13,4 @@ saveIt:
 
 %:
 	@:
+

@@ -6,7 +6,7 @@
   <!-- <a href="https://mytemplate.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Mytemplate</h1>
+<h1 align="center">Working experience platform</h1>
 
 <p align="center">
   <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/mytemplate?color=56BEB8" /> -->
@@ -19,7 +19,7 @@
 Status
 
 <h4 align="center"> 
-	🚧  Mytemplate 🚀 Under construction...  🚧
+	🚧  Worker experience platform 🚀 Under construction...  🚧
 </h4> 
 <hr>
 
@@ -27,13 +27,13 @@ Status
 
 ## :dart: About ##
 
-Just a simple template for my future Svelte projects
+Trying to make a platform where user can share their location together with their working experience. At the moment all the users will gonna be anonymous...
 
-## :sparkles: Why ##
+## :sparkles: GOAL ##
 
-:heavy_check_mark: Feature 1; to make thinks faster\
-:heavy_check_mark: Feature 2; to make thinks effective\
-:heavy_check_mark: Feature 3; to make thinks work
+:heavy_check_mark: Feature 1; GPS locations\
+:heavy_check_mark: Feature 2; Google sign-ups\
+:heavy_check_mark: Feature 3; Have fun all the long way !
 
 ## :rocket: Technologies ##
 
