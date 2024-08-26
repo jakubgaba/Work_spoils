@@ -1,21 +1,45 @@
 {
     "todo-tree.highlights.defaultHighlight": {
     "icon": "alert",
-    "type": "text",
-    "foreground": "red",
-    "background": "white",
+    "type": "text-and-comment",
+    "foreground": "#000000",
+    "background": "#FFFFFF",
     "opacity": 50,
-    "iconColour": "blue"
+    "iconColour": "#0000FF",
+    "gutterIcon": true
 },
 "todo-tree.highlights.customHighlight": {
     "TODO": {
-        "icon": "check",
-        "type": "line"
+        "icon": "rel-file-path",
+        "foreground": "#FFFFFF",
+        "background": "#FFFF00",
+        "iconColour": "#FFFF00"
     },
-    "FIXME": {
-        "foreground": "black",
-        "iconColour": "yellow",
-        "gutterIcon": true
-    }
-}
+    "NOTE": {
+        "icon": "log",
+        "foreground": "#FFFFFF",
+        "background": "#6495ED",
+        "iconColour": "#6495ED"
+    },
+    "BUG": {
+        "icon": "bug",
+        "foreground": "#FFFFFF",
+        "background": "#DC143C",
+        "iconColour": "#DC143C"
+    },
+    "[x]": {
+        "icon": "trophy",
+        "foreground": "#FFFFFF",
+        "background": "#008000",
+        "iconColour": "#008000"
+    },
+    "DUNNO":{
+        "icon": "x-circle",
+        "foreground": "#FFFFFF",
+        "background": "#DC143C",
+        "iconColour": "#DC143C"
+    },
+},
+"todo-tree.tree.showBadges": false,
+"todo-tree.tree.showCountsInTree": false,
 }
