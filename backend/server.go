@@ -29,6 +29,11 @@ func Server() {
 	router := gin.Default()
 	service := Service{}
 
+	//Fun
+	router.GET("/", func(c *gin.Context) {
+		c.String(http.StatusOK, "welcome")
+	})
+
 	//apis
 	api := router.Group("/api")
 	api.GET("/test", service.testService)
