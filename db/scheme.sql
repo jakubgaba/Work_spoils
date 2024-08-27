@@ -5,7 +5,7 @@ CREATE TABLE "test" (
     PRIMARY KEY ("id")
 );
 
-INSERT INTO "main"."products"(
+INSERT INTO "main"."test"(
     "id",
     "name",
     "location"

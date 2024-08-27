@@ -1,16 +1,12 @@
 <script>
 	import { fade, slide } from 'svelte/transition';
-	import Header from "../../components/Header.svelte";
+	import { tests } from '../../connections/connections.ts';
 </script>
 
 <div>
-<Header/>
-<div class="container-fluid">
-	<div class="row">
-		<div in:fade|global={{duration:500}}>
-			TEXT
+	<div class="container-fluid">
+		<div>
+			{tests}
 		</div>
 	</div>
-	</div>
 </div>
-
