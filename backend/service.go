@@ -1,5 +1,7 @@
 // [x] DB filename
 // [x] Main /GET/ function for DB
+// [x] Entities created
+//TODO: Show data on a page
 //TODO: Adding an option of order in a DB
 //NOTE: Playing around with descending and ascending blah blah
 //TODO: Write reach order line as a row
