@@ -28,6 +28,7 @@ func Server() {
 	gin.SetMode(gin.ReleaseMode)
 	router := gin.Default()
 	service := Service{}
+	testing := Testing{}
 
 	//Fun
 	router.GET("/", func(c *gin.Context) {
@@ -37,8 +38,7 @@ func Server() {
 	//apis
 	api := router.Group("/api")
 	api.GET("/test", service.testService)
-	api.GET("/test2", service.getTestData)
-
+	api.GET("/test2", testing.getTestData)
 	//static files
 	router.Use(static.Serve("/", static.LocalFile("./build", true)))
 	router.NoRoute(func(c *gin.Context) { //Just in case of fallback
