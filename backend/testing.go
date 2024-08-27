@@ -7,13 +7,14 @@ import (
 	_ "github.com/mattn/go-sqlite3" //Using ?
 )
 
-// BACKED DB/REST API STRUCT
+// Testing
 type Testing struct {
+	service *Service
 }
 
 // Handler to retrieve data from the database
-func (s *Service) getTestData(c *gin.Context) {
-	db, err := s.getDatabase()
+func (s *Testing) getTestData(c *gin.Context) {
+	db, err := s.service.getDatabase()
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to connect to database"})
 		return
