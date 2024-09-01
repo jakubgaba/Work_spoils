@@ -1,3 +1,8 @@
+//[x]: Mock data works
+//[x]: SQLITE3 data working
+
+
+
 import { dev } from '$app/environment';
 import type {Test} from './entities.ts';
 

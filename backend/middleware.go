@@ -1,3 +1,5 @@
+//[x] CORS are allowed for everything
+
 package backend
 
 import "github.com/gin-gonic/gin"
