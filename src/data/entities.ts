@@ -1,4 +1,4 @@
-export interface test {
+export interface Test {
     id: number;
     name: string;
     location: string;
