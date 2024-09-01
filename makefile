@@ -1,6 +1,7 @@
-run:
+runDEV:
 	npm run dev
-
+runPREV:
+	npm run preview
 build:
 	npm run build
 

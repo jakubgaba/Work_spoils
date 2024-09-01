@@ -20,13 +20,14 @@ func Server() {
 
 	host := flag.String("host", "localhost", "Server host")
 	log.Println(host)
-	port := flag.Int("port", 8080, "Server port")
+	port := flag.Int("port", 5173, "Server port")
 	docker := flag.Bool("docker", false, "Running in docker")
 	log.Println(port)
 	flag.Parse()
 
 	gin.SetMode(gin.ReleaseMode)
 	router := gin.Default()
+	router.Use(CORSMiddleware())
 	service := Service{}
 	testing := Testing{}
 
